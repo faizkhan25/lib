@@ -1,0 +1,42 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #f8f9fa;
+}
+
+.table {
+  margin-top: 20px;
+}
+
+.btn {
+  margin-right: 5px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 30px;
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+.alert {
+  margin-top: 20px;
+}
+
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
