@@ -1,0 +1,140 @@
+//foobar
+
+for(let i =1; i<= 100; i++){
+   if(i% 3 ===0 && i%5 === 0){
+    console.log("foobar");
+   } 
+   else if(i% 5 ===0){
+    console.log("bar");
+   }
+   else if (i% 3 ===0 ){
+    console.log("foo");
+   }
+   else{
+    console.log(i);
+   }
+}
+
+
+//fizzbuzz
+
+for(let i=1; i<= 100;i++){
+if(i% 3== 0 && i% 5==0)
+    console.log("barfoo");
+else if(i% 3==0)
+    console.log("Fizz");
+else if(i% 5==0)
+    console.log("Buzz");
+else if(i% 7==0)
+    console.log("Bazz");
+else{
+    console.log(i);
+}    
+
+}
+
+
+//Fibonacci
+
+console.log("Fibonacci series:");
+let a=0; b=1;
+console.log(a);
+console.log(b);
+for(let i=1; i<=10; i++){
+    let c=a+b;
+    a=b; 
+    b=c;
+    console.log(c);
+}
+
+//palindrome
+
+let number = 1216;
+let temp = number;
+let rev = 0;
+
+while (number > 0) {
+  let rem = number % 10;          // Get last digit
+  rev = rev * 10 + rem; // Build reversed number
+  number = Math.floor(number / 10); // Remove last digit
+}
+
+if (temp === rev) {
+  console.log(temp + " is a palindrome");
+} else {
+  console.log(temp + " is not a palindrome");
+}
+
+//factorial
+
+console.log("Factorial numbers are:")
+let fact = 1;
+for(let i=1; i<=4; i++){
+    fact=fact*i;
+}
+console.log(fact);
+
+//Star
+
+let n=5;
+for(let i=1;i <= n; i++){
+    let pattern ='';
+    for(let j=1; j <=i; j++){
+        pattern +='*';
+    }
+    console.log(pattern);
+}
+
+//even
+
+console.log("Even numbers from 1 to 20");
+for(let i =1; i<=20; i++){
+    if(i%2==0){
+        console.log(i);
+    }
+}
+
+//prime number
+
+for (let n = 2; n <= 100; n++) {
+  let isPrime = true;
+
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      isPrime = false;
+      break;
+    }
+  }
+
+  if (isPrime) {
+    console.log(n);
+  }
+}
+
+//sum of Digit
+
+let number = 1234;  // You can change this number
+let sum = 0;
+
+while (number > 0) {
+  sum += number % 10;       // Get the last digit
+  number = Math.floor(number / 10);  // Remove the last digit
+}
+
+console.log("Sum of digits is:", sum);
+
+
+//reverse a number
+
+let number = 1234;  // Change this to any number
+let reversed = 0;
+
+while (number > 0) {
+  let digit = number % 10;           // Get last digit
+  reversed = reversed * 10 + digit;  // Add digit to reversed number
+  number = Math.floor(number / 10);  // Remove last digit
+}
+
+console.log("Reversed number is:", reversed);
+
+
